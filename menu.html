@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <style>
+      #numberInput {
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+    <title>Піцерія-Смачно</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Головна</a>
+        <a href="">Детальніше</a>
+        <a href="">Контакти</a>
+        <a href="">Реклама</a>
+      </nav>
+      <h1>Меню</h1>
+    </header>
+    <main>
+      <p>Піцца</p>
+      <div>
+        <img
+          src="https://images.pexels.com/photos/9419408/pexels-photo-9419408.jpeg?auto=compress&cs=tinysrgb&w=600"
+        />
+        <img
+          src="https://images.pexels.com/photos/13814644/pexels-photo-13814644.jpeg?auto=compress&cs=tinysrgb&w=600"
+        />
+        <img
+          src="https://images.pexels.com/photos/19681747/pexels-photo-19681747.jpeg?auto=compress&cs=tinysrgb&w=600"
+        />
+      </div>
+      <p>Напої</p>
+      <div>
+        <img
+          class="img1"
+          src="https://cdn.pixabay.com/photo/2016/12/17/18/48/lemonade-1914113_640.jpg"
+        />
+        <img
+          class="img1"
+          src="https://media.istockphoto.com/id/1151952555/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%B8%D0%B9%D1%82%D0%B5-%D0%B2%D0%BE%D0%B4%D1%83-%D0%BA%D0%BE%D0%BB%D0%B0-%D0%B2-%D1%81%D0%BA%D0%BB%D1%8F%D0%BD%D1%86%D1%96-%D0%B7-%D0%BB%D1%8C%D0%BE%D0%B4%D0%BE%D0%BC-%D0%BD%D0%B0-%D1%81%D1%82%D0%BE%D0%BB%D1%96-%D0%B2-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%96-%D0%B2%D0%BD%D0%BE%D1%87%D1%96.jpg?s=612x612&w=0&k=20&c=BqonL4fD3ysHcqgaPWxKmFnb49JRvuE7UrZbC9ko9os="
+        />
+        <img
+          class="img1"
+          src="https://cdn.pixabay.com/photo/2016/12/20/21/43/orange-1921548_640.jpg"
+        />
+      </div>
+      <input type="number" id="numberInput" placeholder="Введіть число" />
+      <button class="pay">Pay</button>
+      <p class="payResult"></p>
+      <script>
+        let numberInput = document.getElementById("numberInput");
+        const prices = document.querySelectorAll("span");
+        let payResult = document.querySelector(".payResult");
+        const payBtn = document.querySelector(".pay");
+        numberInput.value = localStorage.getItem("savedNumber") || "";
+        numberInput.oninput = () => {
+          localStorage.setItem("savedNumber", numberInput.value);
+        };
+        payBtn.addEventListener("click", () => {
+          if (numberInput.value > 0) {
+            payResult.innerHTML = `Сплачено: ${numberInput.value} грн.`;
+          } else {
+            if (numberInput.value == 0) {
+              payResult.innerHTML = `Сума 0 грн`;
+            }
+            if (numberInput.value < 0) {
+              payResult.innerHTML = `Неможливо сплатити мінус значення`;
+            }
+          }
+        });
+      </script>
+    </main>
+    <footer>
+      <h2>Бажаєте замовити доставку на дім?</h2>
+      <p class="p1">Тоді телефонуйте за цім номером телефону:+380965724804</p>
+    </footer>
+  </body>
+</html>
