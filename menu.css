@@ -1,0 +1,16 @@
+body{font-family: sans-serif;}
+nav a{ text-decoration: none; font-size: 25px; margin-left: 30px; border: solid 3px green; padding: 2px
+
+  ; color: green; border-radius: 10px;}
+ nav{background-color: rgb(172, 0, 0); padding: 15px;}
+ *{
+    margin: 0;
+    padding: 0;
+}
+h1{text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 40px;}
+img{  height: 250px; margin-top: 20px; margin-left: 30px ;   }
+.img1{  height: 190px; margin-top: 20px; margin-left: 30px ;   }
+p{text-align: center; font-size: 40px; margin-top: 30px;}
+.p1{text-align: left; font-size: 30px; margin-top: 10px;}
+h2{font-size: 30px;}
+footer{background-color: grey;}
