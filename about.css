@@ -1,4 +1,9 @@
-body{font-family: sans-serif;}
+body{font-family: sans-serif; 
+Width:100%;
+Height:100%;
+Display:flex ;
+Flex-direction:column;}
+
 nav a{ text-decoration: none; font-size: 25px; margin-left: 30px; border: solid 3px green; padding: 10px
 
   ; color: green; border-radius: 10px;}
@@ -48,5 +53,13 @@ h5{font-size: 30px;}
 
 footer{background-color: grey; flex:0 1; padding:10px}
 html{width:100%; height:100%}
-main{flex:1 0;}
+Html{ 
+Width:100%;
+Height:100%;}
+
+Main{
+Flex:1 0}
+
+Footer{
+Flex:0 1}
 
