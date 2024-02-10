@@ -3,7 +3,7 @@ nav a{ text-decoration: none;
 font-size: 25px;
  margin-left: 30px; 
  padding: 6px;
- color: green;
+ color: green; border:solid 3px green; border-radius:5px
  }
  nav{background-color: rgb(172, 0, 0); padding: 15px;}
  *{
