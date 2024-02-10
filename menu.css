@@ -1,10 +1,7 @@
 body{font-family: sans-serif;}
-nav a{ text-decoration: none; 
-font-size: 25px;
- margin-left: 30px; 
- padding: 6px;
- color: green; border:solid 3px green; border-radius:5px
- }
+nav a{ text-decoration: none; font-size: 25px; margin-left: 30px; border: solid 3px green; padding: 4px
+
+  ; color: green; border-radius: 10px;}
  nav{background-color: rgb(172, 0, 0); padding: 15px;}
  *{
     margin: 0;
