@@ -12,4 +12,16 @@ p{font-size: 25px; margin-top: 20px;}
  .pizza{font-size: 30px; margin-top: 20px; text-align: center;background-color: green;  }
  .pizza1{display: flex; margin: auto;}
  img{height: 250px; margin-top: 20px; margin-left: 30px;  }
- .footer1 { background-color: grey; margin-top: 30px; padding: 10px}
+ .footer1 { background-color: grey; margin-top: 30px; padding: 10px; Flex:0 1}
+Html{
+Width:100%;
+Height:100%}
+Body{
+Width:100%;
+Height:100%;
+Display:flex ;
+Flex-direction:column}
+
+Main{
+Flex:1 0}
+
