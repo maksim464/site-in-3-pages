@@ -39,17 +39,4 @@ footer{background-color: grey;}
     word-break: break-all;
 }
 div{margin-bottom: 25px;} 
-Html{
-Width:100%;
-Height:100%}
-Body{
-Width:100%;
-Height:100%;
-Display:flex ;
-Flex-direction:column}
 
-Main{
-Flex:1 0}
-
-Footer{
-Flex:0 1}
